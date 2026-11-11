@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "SkillBridge: Run Skill Gap Analysis",
+      "type": "shell",
+      "command": "python3",
+      "args": ["${workspaceFolder}/skillbridge/main.py", "analyze", "--role", "AI Engineer"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "SkillBridge: Generate Career Roadmap",
+      "type": "shell",
+      "command": "python3",
+      "args": ["${workspaceFolder}/skillbridge/main.py", "roadmap", "--role", "AI Engineer", "--weeks", "8"],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true
+      }
+    }
+  ]
+}

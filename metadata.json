@@ -1,0 +1,6 @@
+{
+  "name": "SkillBridge AI",
+  "description": "Skill Gap & Career Roadmap Predictor for engineering students with AI resume parsing, role benchmark comparison, interactive milestone roadmap, and VS Code Python integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

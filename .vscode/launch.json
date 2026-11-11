@@ -1,0 +1,39 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Streamlit: SkillBridge Web App (F5)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "args": ["run", "${workspaceFolder}/app.py", "--server.port", "8501"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: SkillBridge Analyzer (F5)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/skillbridge/main.py",
+      "args": ["analyze", "--role", "AI Engineer"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Generate 8-Week Roadmap (F5)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/skillbridge/main.py",
+      "args": ["roadmap", "--role", "Data Scientist", "--weeks", "8", "--hours", "10"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Test ML Similarity Engine",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/similarity_engine.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}
